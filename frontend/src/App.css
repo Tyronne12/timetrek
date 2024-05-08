@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Permanent+Marker&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+}
+
+.navbar{
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height: 7%;
+    background-color: rgb(88, 97, 86);
+    top: 0;
+    grid-template-columns: 1.5fr 5fr 3fr;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+}
+
+.text-logo{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.sidebar {
+    width: 15%;
+    position: fixed;
+    left: 0;
+    top: 0; /* Add top: 0 to ensure the sidebar starts from the top of the viewport */
+    bottom: 0; /* Adjusted from height: 100vh to cover the entire height */
+    display: grid;
+    background-color: rgb(2, 39, 13);
+    grid-template-rows: 2fr 3fr 2fr;
+    justify-content: center;
+    row-gap: 5%;
+   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);  Box shadow */
+    z-index: 200;
+}
+
+.sidebar-header {
+    height: 100%;
+    width: 12vw;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+}
+.name-text{
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.name-container{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic-container{
+    display: flex;
+    width: 8vw;
+    height: 70%;
+    background-color: rgb(241, 241, 241);
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+.routes-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 5%;
+    justify-self: center;
+}
+
+.routes{
+    width: 12vw;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0;
+    margin: 0;cursor: pointer;
+    text-decoration: none;
+}
+
+.route-text{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.sidebar-icon{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.title{
+    font-size: 100px;
+}
+
+.login-page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-section-login{
+    width: 95%;
+    height: 100%;
+    background-color: rgb(2, 39, 13);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.meeting-img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.text-logo{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color:rgb(2, 39, 13);
+}
+
+.right-section-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    margin-top: 3%;
+    width: 50%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4%;
+    border-radius: 3%;
+    border: 1%;
+    border-style: solid;
+    border-color:rgb(2, 39, 13);
+}
+
+.login-btn{
+    background-color: rgb(4, 73, 25);
+    transition: 0.4 s ease;
+    margin-top: 8%;
+    height: 18%;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.login-btn:hover{
+    background-color: rgb(7, 105, 36);
+    transition: 0.4s ease;
+}
+
+.login-btn:active{
+    background-color: rgb(7, 105, 36);
+    box-shadow: none;
+    border-color: none;
+}
+
+.log-input{
+    margin-top: 5%;
+}
+
+.custom-input{
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-color:  rgb(4, 73, 25);
+    transition: 0.4 s ease;
+}
+.custom-input:focus {
+    border-color:  rgb(32, 175, 44);
+    box-shadow: none;
+    transition: 0.4s ease;
+  }
+
+.trek{
+    color:rgb(88, 97, 86);
+}
+
+
+.log-message{
+    color: red;
+}
+
+.display-pic{
+    width: 100%;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.text-logo-nav{
+    padding: 0;
+    margin: 0;
+    color: rgb(54, 182, 50);
+}
+
+.span-logo-nav{
+    color: white;
+}
+
+.login-container{
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+.schedule-route{
+    margin-left: 15%;
+    width: 85%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 6fr 1fr;
+}
+
+.sub-sidebar{
+    position: fixed;
+    width: 6%;
+    height: 100%;
+    background-color: rgb(41, 128, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.sub-sidebar-icon-container{
+    width: 75%;
+    height: 3.5rem;
+    margin-top: 8%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+    padding-right: 15%;
+    text-decoration: none;
+}
+
+.sub-sidebar-icon-container:hover{
+    width: 400%;
+    background-color: rgb(41, 128, 24);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.sub-sidebar-icon-text{
+    width: 10rem;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.sub-sidebar-icon-container:hover .sub-sidebar-icon-text {
+    opacity: 1; 
+    color: white;
+    transition: 0.4s ease;
+  }
+
+  .sub-sidebar-icon{
+    display: flex;
+    justify-self: end;
+    margin-right: 1px;
+    margin-top: 1px;
+  }
+
+  .schedule-content-main{
+    width: 100%;
+    height: 90%;
+    padding: 2%;
+    margin-top: 5%;
+    padding-left: 5%;
+  }
+
+  .sub-route-main-content{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 1rem;
+    padding: 3%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */    
+  }
+
+  .route-text-nav{
+    padding: 0;
+    margin: 0;
+    font-size: 90%;
+    color: white;
+    border-style: solid;
+    border-width: 0;
+    border-right-width: 0.5rem;
+    border-color: rgb(2, 39, 13);
+    width: 14%;
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+
+  }
